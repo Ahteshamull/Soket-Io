@@ -17,7 +17,8 @@ io.on("connection", (socket) => {
 
   // socket.emit("msg", "Hello From Server");
   socket.on("msg", (data) => {
-   socket.emit("msg", data)
+    
+   socket.broadcast.emit("msg", data)
   })
 
   // socket.on("disconnect", () => {
