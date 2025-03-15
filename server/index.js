@@ -13,13 +13,16 @@ const io = new Server(server, {
 });
 
 io.on("connection", (socket) => {
-  console.log("A user connected", socket.id);
+  // console.log("A user connected", socket.id);
 
-  socket.emit("msg", "Hello From Server");
+  // socket.emit("msg", "Hello From Server");
+  socket.on("msg", (data) => {
+   socket.emit("msg", data)
+  })
 
-  socket.on("disconnect", () => {
-    console.log("A user disconnected", socket.id);
-  });
+  // socket.on("disconnect", () => {
+  //   console.log("A user disconnected", socket.id);
+  // });
 });
 
 server.listen(3000, () => {
