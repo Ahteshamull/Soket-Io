@@ -62,7 +62,7 @@ export default function App() {
 
       {/* Message Display */}
       <div className="mt-6 w-full max-w-md bg-white p-4 rounded-lg shadow-lg min-h-[200px] overflow-y-auto">
-        <h2 className="text-lg font-semibold text-gray-700 mb-2">Messages:</h2>
+        <h2 className="text-lg font-semibold text-gray-600 mb-2">Messages:</h2>
         <div className="space-y-2">
           {messages.length > 0 ? (
             messages.map((msg, index) => (
