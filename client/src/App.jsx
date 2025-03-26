@@ -40,7 +40,7 @@ export default function App() {
       setMessages(messages.filter((_, i) => i !== index));
     }
   };
-console.log(message)
+
   return (
     <div className="flex flex-col items-center justify-center h-screen bg-gray-100 p-6">
       {/* Input & Button */}
